@@ -15,9 +15,24 @@ class Nyomo : StreamSB() {
     override var mainUrl = "https://nyomo.my.id"
 }
 
+class Archive : ArchiveORG() {
+    override var name: String = "Archive"
+    override var mainUrl = "https://archive.org"
+}
+
 class Streamhide : Filesim() {
     override var name: String = "Streamhide"
     override var mainUrl: String = "https://streamhide.to"
+}
+
+class Filemoon : Filemoon() {
+    override var name: String = "Filemoon"
+    override var mainUrl: String = "https://filemoon.link"
+}
+
+class StreamWish : StreamWish() {
+    override var name: String = "StreamWish"
+    override var mainUrl: String = "https://asnwish.com"
 }
 
 open class Lbx : ExtractorApi() {
@@ -70,7 +85,7 @@ open class Lbx : ExtractorApi() {
 
 open class Kuramadrive : ExtractorApi() {
     override val name = "DriveKurama"
-    override val mainUrl = "https://kuramadrive.com"
+    override val mainUrl = "https://kuramadrive.boo"
     override val requiresReferer = true
 
     override suspend fun getUrl(
